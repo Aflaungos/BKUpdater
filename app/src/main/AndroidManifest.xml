@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.mesalabs.ten.update">
+    package="com.boostkernel.updater">
 
     <uses-permission android:name="android.permission.ACCESS_CACHE_FILESYSTEM" tools:ignore="ProtectedPermissions" />
     <uses-permission android:name="android.permission.DEVICE_POWER" tools:ignore="ProtectedPermissions"/>
@@ -19,7 +19,7 @@
     <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
     <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
 
-    <application android:name=".TenUpdateApp" android:allowBackup="false" android:hardwareAccelerated="true" android:persistent="true" android:icon="@mipmap/ic_launcher" android:label="@string/mesa_tenupdate" android:supportsRtl="true" android:theme="@style/mesa_OTA_AppStyle.DayNight" android:networkSecurityConfig="@xml/network_security_config" tools:replace="android:label">
+    <application android:name="BoostKernelUpdater" android:allowBackup="false" android:hardwareAccelerated="true" android:persistent="true" android:icon="@mipmap/ic_launcher" android:label="@string/boostkernel_updater" android:supportsRtl="true" android:theme="@style/boostkernel_OTA_AppStyle.DayNight" android:networkSecurityConfig="@xml/network_security_config" tools:replace="android:label">
 
         <meta-data android:name="SamsungBasicInteraction" android:value="SEP10"/>
         <meta-data android:name="com.samsung.android.icon_container.has_icon_container" android:value="true"/>
@@ -30,19 +30,19 @@
 
 
         <!-- Home Page Activity -->
-        <activity android:name=".activity.home.MainActivity" android:theme="@style/mesa_OTA_AppStyle.DayNight" android:hardwareAccelerated="true" android:configChanges="keyboard|keyboardHidden|orientation|screenSize|smallestScreenSize" android:launchMode="singleTop" android:windowSoftInputMode="adjustResize">
+        <activity android:name=".activity.home.MainActivity" android:theme="@style/boostkernel_OTA_AppStyle.DayNight" android:hardwareAccelerated="true" android:configChanges="keyboard|keyboardHidden|orientation|screenSize|smallestScreenSize" android:launchMode="singleTop" android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <action android:name="android.intent.action.VIEW" />
             </intent-filter>
         </activity>
         <!-- Changelog Activity -->
-        <activity android:name=".activity.home.ChangelogActivity" android:theme="@style/mesa_OTA_ChangelogActivity_AppStyle.DayNight" android:hardwareAccelerated="true" android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|smallestScreenSize" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name=".activity.home.ChangelogActivity" android:theme="@style/boostkernel_OTA_ChangelogActivity_AppStyle.DayNight" android:hardwareAccelerated="true" android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|smallestScreenSize" android:windowSoftInputMode="adjustResize|stateHidden"/>
         <!-- Firmware Info Activity -->
-        <activity android:name=".activity.home.FirmwareInfoActivity" android:theme="@style/mesa_OTA_AppStyle.DayNight" android:hardwareAccelerated="true" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity android:name=".activity.home.FirmwareInfoActivity" android:theme="@style/boostkernel_OTA_AppStyle.DayNight" android:hardwareAccelerated="true" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:windowSoftInputMode="adjustResize|stateHidden" />
 
         <!-- Settings Activity -->
-        <activity android:name=".activity.settings.SettingsActivity" android:theme="@style/mesa_OTA_AppStyle.DayNight" android:hardwareAccelerated="true" android:configChanges="keyboardHidden|orientation|screenSize|smallestScreenSize" android:windowSoftInputMode="adjustResize">
+        <activity android:name=".activity.settings.SettingsActivity" android:theme="@style/boostkernel_OTA_AppStyle.DayNight" android:hardwareAccelerated="true" android:configChanges="keyboardHidden|orientation|screenSize|smallestScreenSize" android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="com.sec.android.intent.action.SEC_APPLICATION_SETTINGS"/>
                 <category android:name="android.intent.category.DEFAULT"/>
@@ -51,11 +51,11 @@
         </activity>
 
         <!-- About Page Activity -->
-        <activity android:name=".activity.aboutpage.AboutActivity" android:theme="@style/mesa_AboutActivity_AppStyle.DayNight" android:hardwareAccelerated="true" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" />
+        <activity android:name=".activity.aboutpage.AboutActivity" android:theme="@style/boostkernel_AboutActivity_AppStyle.DayNight" android:hardwareAccelerated="true" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" />
         <!-- Credits Activity -->
-        <activity android:name=".activity.aboutpage.CreditsActivity" android:theme="@style/mesa_OTA_AppStyle.DayNight" android:hardwareAccelerated="true" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity android:name=".activity.aboutpage.CreditsActivity" android:theme="@style/boostkernel_OTA_AppStyle.DayNight" android:hardwareAccelerated="true" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:windowSoftInputMode="adjustResize|stateHidden" />
         <!-- Open Source License Activity -->
-        <activity android:name=".activity.aboutpage.OpenSourceLicenseActivity" android:theme="@style/mesa_OTA_AppStyle.DayNight" android:hardwareAccelerated="true" android:configChanges="orientation|screenSize" android:launchMode="singleTop" />
+        <activity android:name=".activity.aboutpage.OpenSourceLicenseActivity" android:theme="@style/boostkernel_OTA_AppStyle.DayNight" android:hardwareAccelerated="true" android:configChanges="orientation|screenSize" android:launchMode="singleTop" />
 
 
         <receiver
@@ -64,19 +64,19 @@
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
                 <action android:name="android.intent.action.QUICKBOOT_POWERON" />
-                <action android:name="com.mesalabs.ten.ota.MANIFEST_CHECK_BACKGROUND" />
-                <action android:name="com.mesalabs.ten.ota.START_UPDATE_CHECK" />
+                <action android:name="com.boostkernel.updater.MANIFEST_CHECK_BACKGROUND" />
+                <action android:name="com.boostkernel.updater.START_UPDATE_CHECK" />
             </intent-filter>
         </receiver>
 
         <provider
-            android:name="com.mesalabs.cerberus.update.content.GenericFileProvider"
+            android:name="com.boostkernel.updater.content.GenericFileProvider"
             android:authorities="${applicationId}.provider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/mesa_provider_paths"/>
+                android:resource="@xml/boostkernel_provider_paths"/>
         </provider>
 
     </application>
