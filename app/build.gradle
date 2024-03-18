@@ -7,7 +7,6 @@ ext.versionClassifier = null
 
 android {
     compileSdkVersion 30
-    buildToolsVersion "30.0.2"
     defaultConfig {
         applicationId "com.boostkernel.updater"
         minSdkVersion 30
