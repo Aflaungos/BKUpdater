@@ -19,7 +19,7 @@
     <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
     <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
 
-    <application android:name="BoostKernelUpdater" android:allowBackup="false" android:hardwareAccelerated="true" android:persistent="true" android:icon="@mipmap/ic_launcher" android:label="@string/mesa_tenupdate" android:supportsRtl="true" android:theme="@style/boostkernel_OTA_AppStyle.DayNight" android:networkSecurityConfig="@xml/network_security_config" tools:replace="android:label">
+    <application android:name="BoostKernelUpdater" android:allowBackup="false" android:hardwareAccelerated="true" android:persistent="true" android:icon="@mipmap/ic_launcher" android:label="@string/mesa_tenupdate" android:supportsRtl="true" android:theme="@style/mesa_OTA_AppStyle.DayNight" android:networkSecurityConfig="@xml/network_security_config" tools:replace="android:label">
 
         <meta-data android:name="SamsungBasicInteraction" android:value="SEP10"/>
         <meta-data android:name="com.samsung.android.icon_container.has_icon_container" android:value="true"/>
