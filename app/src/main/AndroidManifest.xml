@@ -64,13 +64,13 @@
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
                 <action android:name="android.intent.action.QUICKBOOT_POWERON" />
-                <action android:name="com.boostkernel.updater.MANIFEST_CHECK_BACKGROUND" />
-                <action android:name="com.boostkernel.updater.START_UPDATE_CHECK" />
+                <action android:name="com.mesalabs.ten.ota.MANIFEST_CHECK_BACKGROUND" />
+                <action android:name="com.mesalabs.ten.ota.updater.START_UPDATE_CHECK" />
             </intent-filter>
         </receiver>
 
         <provider
-            android:name="com.boostkernel.updater.content.GenericFileProvider"
+            android:name="com.mesalabs.cerberus.update.content.GenericFileProvider"
             android:authorities="${applicationId}.provider"
             android:exported="false"
             android:grantUriPermissions="true">
