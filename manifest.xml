@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OnOTAInfo>
+  <RomName>BoostKernel Update!</RomName>
+  <DownloadURL>https://github.com/Aflaungos/android_kernel_samsung_m23xq/releases/latest/download/Kernel-m23xq.zip</DownloadURL>
+  <AndroidVer>14</AndroidVer>
+  <OneUIVer>6</OneUIVer>
+  <ChangelogHeader>https://i.ibb.co/92RxppQ/changelogheader1100.png</ChangelogHeader>
+  <ChangelogURL>https://raw.githubusercontent.com/ShaDisNX255/NcX_OnUpdate/main/a52q/changelog.txt</ChangelogURL>
+</OnOTAInfo>
