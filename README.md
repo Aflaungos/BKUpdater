@@ -1,9 +1,8 @@
-![Banner](img/icon.png?raw=true)
+<img src="img/BK.png?raw=true" alt="Banner" style="max-width: 10000px;">
 =====
 
-This repo contains 십 Update app.
+## Official BoostKernel Updater App
 
-Please notice the app needs external edits to the following files in order to enable the "parentIsDeviceDefault" bool in frameworks (this one enables some little UI elements like ToolbarPopup & EdgeEffect):
-
-> /res/values/styles.xml
-> /res/values-v25/styles.xml
+Officially supported devices:
+- Moto G6 Plus (Evert)
+- Samsung Galaxy M23/F23 5G (m23xq)
