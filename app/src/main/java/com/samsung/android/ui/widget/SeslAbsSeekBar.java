@@ -33,6 +33,7 @@ import java.util.List;
 import androidx.appcompat.graphics.drawable.DrawableWrapper;
 import androidx.appcompat.widget.DrawableUtils;
 import androidx.appcompat.widget.ViewUtils;
+import androidx.core.content.ContextCompat;
 import androidx.core.graphics.drawable.DrawableCompat;
 import androidx.core.util.Preconditions;
 import androidx.core.view.ViewCompat;
@@ -288,7 +289,7 @@ public abstract class SeslAbsSeekBar extends SeslProgressBar {
                 var3 = R.color.sesl_seekbar_disable_color_activated_dark;
             }
 
-            var3 = var6.getColor(var3, null);
+            var3 = ContextCompat.getColor(getContext(), var6.getColor(var3, 0));
             this.mDefaultActivatedThumbColor = new ColorStateList(new int[][]{var8, var10}, new int[]{var4, var3});
         }
 
