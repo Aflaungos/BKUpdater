@@ -1,0 +1,4 @@
+BoostKernel changelog
+
+BoostKernel v14.6:
+• Initial release, the usual stuff
