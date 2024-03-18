@@ -76,7 +76,7 @@
             android:grantUriPermissions="true">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/boostkernel_provider_paths"/>
+                android:resource="@xml/mesa_provider_paths"/>
         </provider>
 
     </application>
