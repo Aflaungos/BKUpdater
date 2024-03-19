@@ -149,7 +149,7 @@ public class SeslColorPicker extends LinearLayout {
             var2 = R.color.sesl_color_picker_selected_color_item_text_color_dark;
         }
 
-        var2 = var1.getColor(var2, null);
+        int color = var1.getColor(var2, null);
         TextView var5 = (TextView)this.findViewById(R.id.sesl_color_picker_current_color_text);
         var5.setTextColor(var2);
         TextView var3 = (TextView)this.findViewById(R.id.sesl_color_picker_picked_color_text);
@@ -283,7 +283,7 @@ public class SeslColorPicker extends LinearLayout {
             var2 = R.color.sesl_color_picker_used_color_text_color_dark;
         }
 
-        var2 = ContextCompat.getColor(var1, var2);
+        int color = ContextCompat.getColor(var1, var2);
         this.mRecentlyText.setTextColor(var2);
         this.mRecentlyDivider.getBackground().setTint(var2);
     }

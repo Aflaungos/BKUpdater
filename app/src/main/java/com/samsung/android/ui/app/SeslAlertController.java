@@ -1059,7 +1059,7 @@ public class SeslAlertController {
             if (this.mIsMultiChoice) {
                 var3 = this.mCursor;
                 if (var3 == null) {
-                    var6 = new ArrayAdapter<CharSequence>(this.mContext, var1.mMultiChoiceItemLayout, 16908308, this.mItems) {
+                    var6 = new ArrayAdapter<CharSequence>(this.mContext, var1.mMultiChoiceItemLayout, android.R.id.text1, this.mItems) {
                         public View getView(int var1, View var2x, ViewGroup var3) {
                             View var5 = super.getView(var1, var2x, var3);
                             boolean[] var4 = SeslAlertController.AlertParams.this.mCheckedItems;

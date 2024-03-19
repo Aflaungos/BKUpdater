@@ -289,7 +289,7 @@ public abstract class SeslAbsSeekBar extends SeslProgressBar {
                 var3 = R.color.sesl_seekbar_disable_color_activated_dark;
             }
 
-            var3 = ContextCompat.getColor(getContext(), var6.getColor(var3, 0));
+	    int color = var6.getColor(var3, null);
             this.mDefaultActivatedThumbColor = new ColorStateList(new int[][]{var8, var10}, new int[]{var4, var3});
         }
 

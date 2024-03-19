@@ -98,6 +98,8 @@
         <attr name="layout_scrollFlags" />
         <attr name="layout_scrollInterpolator" format="reference"/>
     </declare-styleable>
+    <declare-styleable name="SeslAppCompatSpinner">
+    </declare-styleable>
     <declare-styleable name="SeslCheckedTextView">
         <attr name="android:checked" />
         <attr name="android:checkMark" />
