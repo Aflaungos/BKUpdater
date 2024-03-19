@@ -1,4 +1,5 @@
-BoostKernel changelog
+BoostKernel Changelog
 
 BoostKernel v14.6:
-• Initial release, the usual stuff
+
+• Initial release testing app, just the usual stuff
