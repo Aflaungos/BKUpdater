@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <OnOTAInfo>
   <RomName>BoostKernel Update!</RomName>
+  <VersionName>1.0.0</VersionName>
+  <BuildNumber type="integer">1.0.0</BuildNumber>
   <DownloadURL>https://github.com/Aflaungos/android_kernel_samsung_m23xq/releases/latest/download/Kernel-m23xq.zip</DownloadURL>
   <AndroidVer>14</AndroidVer>
   <OneUIVer>6</OneUIVer>
+  <CheckMD5>227a2c481a07eb4f289759c48c943e12</CheckMD5>
+  <FileSize type="long">990000000</FileSize>
+  <WebsiteURL>https://forum.xda-developers.com/apps/magisk/dev-magisk-canary-channel-bleeding-edge-t3839337</WebsiteURL>
   <ChangelogHeader>https://i.ibb.co/92RxppQ/changelogheader1100.png</ChangelogHeader>
   <ChangelogURL>https://raw.githubusercontent.com/Aflaungos/OnUpdate/m23xq/changelog.txt</ChangelogURL>
 </OnOTAInfo>
