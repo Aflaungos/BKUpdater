@@ -4,12 +4,8 @@ on:
   workflow_dispatch:
 
 jobs:
-  build-manager:
+  build-bkupdater:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./manager
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
