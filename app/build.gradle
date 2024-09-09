@@ -6,11 +6,11 @@ ext.versionPatch = 0
 ext.versionClassifier = null
 
 android {
-    compileSdkVersion 34
+    compileSdkVersion 33
     defaultConfig {
         applicationId "com.boostkernel.updater"
-        minSdkVersion 34
-        targetSdkVersion 34
+        minSdkVersion 33
+        targetSdkVersion 33
         versionCode generateVersionCode()
         versionName generateVersionName()
     }
