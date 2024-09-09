@@ -25,8 +25,8 @@ android {
         checkReleaseBuilds false
     }
     compileOptions {
-        sourceCompatibility = 21
-        targetCompatibility = 21
+        sourceCompatibility = 22
+        targetCompatibility = 22
     }
 }
 
