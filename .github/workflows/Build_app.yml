@@ -37,17 +37,12 @@ jobs:
           ./gradlew clean assembleRelease
 
       - name: Sign App
-        id: sign_app
-        uses: ilharp/sign-android-release@v1.0.4
-        with:
-          releaseDir: app/build/outputs
-          signingKey: ${{ secrets.ANDROID_SIGNING_KEY }}
-          keyAlias: ${{ secrets.ANDROID_KEY_ALIAS }}
-          keyStorePassword: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+        run: |
+          java -jar "/home/runner/work/BKUpdater/BKUpdater/ApkSigner.jar" sign  --key "C:\Users\vimav\Desktop\Programs\ApkEasyTool\Resources\BKUpdater.pk8" --cert "C:\Users\vimav\Desktop\Programs\ApkEasyTool\Resources\BKUpdater.pem"  --v4-signing-enabled false --out "/home/runner/work/BKUpdater/BKUpdater/app/build/outputs/apk/release/app-release-signed.apk" "/home/runner/work/BKUpdater/BKUpdater/app/build/outputs/apk/release/app-release-unsigned.apk"
           
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
         with:
           name: BKUpdater.apk
-          path: /home/runner/work/BKUpdater/BKUpdater/app/build/outputs/apk/release/app-release-unsigned.apk
+          path: /home/runner/work/BKUpdater/BKUpdater/app/build/outputs/apk/release/app-release-unsigned-signed.apk
           if-no-files-found: error
