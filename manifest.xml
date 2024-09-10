@@ -3,12 +3,12 @@
   <RomName>BoostKernel Update!</RomName>
   <VersionName>1.0.0</VersionName>
   <BuildNumber type="integer">1.0.0</BuildNumber>
-  <DownloadURL>https://github.com/Aflaungos/android_kernel_samsung_m23xq/releases/latest/download/Kernel-m23xq.zip</DownloadURL>
+  <DownloadURL>https://github.com/Aflaungos/android_kernel_samsung_sm7225/releases/download/37-refs%2Fheads%2Flineage-20.0-BoostKernel-old-m23xq/BoostKernel_m23xq+KSU_2024-09-09.zip</DownloadURL>
   <AndroidVer>14</AndroidVer>
-  <OneUIVer>6</OneUIVer>
-  <CheckMD5>227a2c481a07eb4f289759c48c943e12</CheckMD5>
+  <OneUIVer>6.1</OneUIVer>
+  <CheckMD5>be4dcd09fc209b4d4dfd54060671f702843430f6</CheckMD5>
   <FileSize type="long">990000000</FileSize>
   <WebsiteURL>https://forum.xda-developers.com/apps/magisk/dev-magisk-canary-channel-bleeding-edge-t3839337</WebsiteURL>
   <ChangelogHeader>https://i.ibb.co/92RxppQ/changelogheader1100.png</ChangelogHeader>
-  <ChangelogURL>https://raw.githubusercontent.com/Aflaungos/OnUpdate/m23xq/changelog.txt</ChangelogURL>
+  <ChangelogURL>https://raw.githubusercontent.com/Aflaungos/BKUpdater/changelog.txt</ChangelogURL>
 </OnOTAInfo>
