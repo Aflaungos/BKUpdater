@@ -55,16 +55,12 @@ jobs:
           cd app/build
           ls
           echo '##########This is "outputs/apk" ############'
-          cd outputs/apk
-          ls
-          cd ..
-          echo '##########This is "intermediates" ############'
-          cd intermediates
+          cd outputs/apk/release
           ls
 
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
         with:
           name: BKUpdater.apk
-          path: /home/runner/work/BKUpdater/app/build/outputs/apk/BKUpdater.apk
+          path: /home/runner/work/BKUpdater/app/build/outputs/apk/release/BKUpdater.apk
           if-no-files-found: error
