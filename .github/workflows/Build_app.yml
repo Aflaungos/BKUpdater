@@ -52,9 +52,9 @@ jobs:
         name: Sign app APK
         id: sign_app
         with:
-          releaseDir: app/build/outputs/apk/release
-          signingKey: ${{ secrets.SIGNING_KEY }}
-          keyAlias: ${{ secrets.ALIAS }}
+          releaseDirectory: app/build/outputs/apk/release
+          signingKeyBase64: ${{ secrets.SIGNING_KEY }}
+          alias: ${{ secrets.ALIAS }}
           keyStorePassword: ${{ secrets.KEY_STORE_PASSWORD }}
           buildToolsVersion: "34.0.0"
 
