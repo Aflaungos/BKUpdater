@@ -36,17 +36,14 @@ jobs:
           sed -i 's/org.gradle.configuration-cache=true//g' gradle.properties
           ./gradlew clean assembleRelease
 
-      - uses: r0adkll/sign-android-release@v1
-        name: Sign app APK
+      - name: Sign App
         id: sign_app
+        uses: ilharp/sign-android-release@v1.0.4
         with:
-          releaseDirectory: app/build/outputs/apk/release
-          signingKeyBase64: ${{ secrets.SIGNING_KEY }}
-          alias: ${{ secrets.ALIAS }}
+          releaseDir: app/build/outputs
+          signingKey: ${{ secrets.SIGNING_KEY }}
+          keyAlias: ${{ secrets.ALIAS }}
           keyStorePassword: ${{ secrets.KEY_STORE_PASSWORD }}
-        env:
-          # override default build-tools version (33.0.0) -- optional
-          BUILD_TOOLS_VERSION: "34.0.0"
           
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
