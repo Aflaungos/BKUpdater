@@ -48,6 +48,11 @@ jobs:
           sed -i 's/org.gradle.configuration-cache=true//g' gradle.properties
           ./gradlew clean assembleRelease
 
+      - name: Check Paths
+        run: |
+          pwd
+          ls
+
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
         with:
