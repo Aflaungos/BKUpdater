@@ -54,8 +54,8 @@ jobs:
           echo '##########This is "app/build" ############'
           cd app/build
           ls
-          echo '##########This is "outputs" ############'
-          cd outputs
+          echo '##########This is "outputs/apk" ############'
+          cd outputs/apk
           ls
           cd ..
           echo '##########This is "intermediates" ############'
