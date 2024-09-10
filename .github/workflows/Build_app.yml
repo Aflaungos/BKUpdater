@@ -38,7 +38,7 @@ jobs:
 
       - name: Sign App
         run: |
-          java -jar "/home/runner/work/BKUpdater/BKUpdater/ApkSigner.jar" sign  --key "C:\Users\vimav\Desktop\Programs\ApkEasyTool\Resources\BKUpdater.pk8" --cert "C:\Users\vimav\Desktop\Programs\ApkEasyTool\Resources\BKUpdater.pem"  --v4-signing-enabled false --out "/home/runner/work/BKUpdater/BKUpdater/app/build/outputs/apk/release/app-release-signed.apk" "/home/runner/work/BKUpdater/BKUpdater/app/build/outputs/apk/release/app-release-unsigned.apk"
+          java -jar "/home/runner/work/BKUpdater/BKUpdater/apksigner.jar" sign  --key "C:\Users\vimav\Desktop\Programs\ApkEasyTool\Resources\BKUpdater.pk8" --cert "C:\Users\vimav\Desktop\Programs\ApkEasyTool\Resources\BKUpdater.pem"  --v4-signing-enabled false --out "/home/runner/work/BKUpdater/BKUpdater/app/build/outputs/apk/release/app-release-signed.apk" "/home/runner/work/BKUpdater/BKUpdater/app/build/outputs/apk/release/app-release-unsigned.apk"
           
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
