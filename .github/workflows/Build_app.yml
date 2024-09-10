@@ -62,5 +62,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: BKUpdater.apk
-          path: /home/runner/work/BKUpdater/app/build/outputs/apk/release/BKUpdater.apk
+          path: /home/runner/work/BKUpdater/BKUpdater/app/build/outputs/apk/release/app-release-unsigned.apk
           if-no-files-found: error
