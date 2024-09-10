@@ -6,7 +6,7 @@ ext.versionPatch = 0
 ext.versionClassifier = null
 
 android {
-    namespace "com.boostkernel.updater"
+    namespace "com.mesalabs.ten.update"
     compileSdkVersion 30
     defaultConfig {
         applicationId "com.boostkernel.updater"
