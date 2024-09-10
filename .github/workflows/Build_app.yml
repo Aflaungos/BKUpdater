@@ -51,9 +51,12 @@ jobs:
       - name: Check Paths
         run: |
           pwd
-          cd app/build/
+          cd app/build
           ls
-          cd app/build/outputs/
+          cd outputs
+          ls
+          cd ..
+          cd intermediates
           ls
 
       - name: Upload build artifact
