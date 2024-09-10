@@ -48,15 +48,18 @@ jobs:
           sed -i 's/org.gradle.configuration-cache=true//g' gradle.properties
           ./gradlew clean assembleRelease
 
-      - name: Check Paths
-        run: |
-          pwd
-          echo '##########This is "app/build" ############'
-          cd app/build
-          ls
-          echo '##########This is "outputs/apk" ############'
-          cd outputs/apk/release
-          ls
+      - name: Sign app APK
+        uses: Tlaster/android-sign@v1
+        with:
+          releaseDirectory: |
+            app/build/outputs/apk/release
+            app/build/outputs/bundle/release
+          signingKeyBase64: ${{ secrets.SIGNING_KEY }}
+          output: build/release/signed
+          alias: ${{ secrets.ALIAS }}
+          keyStorePassword: ${{ secrets.KEY_STORE_PASSWORD }}
+        env:
+          BUILD_TOOLS_VERSION: "30.0.2"
 
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
