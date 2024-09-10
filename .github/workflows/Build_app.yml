@@ -58,5 +58,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: BKUpdater.apk
-          path: $GITHUB_WORKSPACE/BKUpdater/app/build/outputs/BKUpdater.apk
+          path: /home/runner/work/BKUpdater/BKUpdater/app/build/outputs/BKUpdater.apk
           if-no-files-found: error
