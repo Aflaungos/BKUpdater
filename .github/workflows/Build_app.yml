@@ -48,7 +48,7 @@ jobs:
           sed -i 's/org.gradle.configuration-cache=true//g' gradle.properties
           ./gradlew clean assembleRelease
 
-      - uses: ilharp/sign-android-release@v1 # Or use @nightly
+      - uses: r0adkll/sign-android-release@v1
         name: Sign app APK
         id: sign_app
         with:
@@ -56,7 +56,7 @@ jobs:
           signingKey: ${{ secrets.SIGNING_KEY }}
           keyAlias: ${{ secrets.ALIAS }}
           keyStorePassword: ${{ secrets.KEY_STORE_PASSWORD }}
-          buildToolsVersion: 33.0.0
+          buildToolsVersion: "34.0.0"
 
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
