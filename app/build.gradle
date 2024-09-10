@@ -9,7 +9,7 @@ android {
     namespace "com.mesalabs.ten.update"
     compileSdkVersion 30
     defaultConfig {
-        applicationId "com.boostkernel.updater"
+        applicationId "com.mesalabs.ten.update"
         minSdkVersion 24
         targetSdkVersion 30
         versionCode generateVersionCode()
