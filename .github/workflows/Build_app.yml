@@ -37,7 +37,6 @@ jobs:
           ./gradlew clean assembleRelease
 
       - name: Sign App
-        if: ${{ steps.regex-match.outputs.match != '' }}
         id: sign_app
         uses: ilharp/sign-android-release@v1.0.4
         with:
@@ -45,7 +44,6 @@ jobs:
           signingKey: ${{ secrets.ANDROID_SIGNING_KEY }}
           keyAlias: ${{ secrets.ANDROID_KEY_ALIAS }}
           keyStorePassword: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
-          keyPassword: ${{ secrets.ANDROID_KEY_PASSWORD }}
           
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
