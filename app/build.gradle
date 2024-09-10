@@ -6,6 +6,7 @@ ext.versionPatch = 0
 ext.versionClassifier = null
 
 android {
+    namespace "com.boostkernel.updater"
     compileSdkVersion 30
     defaultConfig {
         applicationId "com.boostkernel.updater"
