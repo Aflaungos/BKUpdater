@@ -46,6 +46,15 @@ jobs:
           path: /home/runner/work/BKUpdater/BKUpdater/app/build/outputs/apk/release/BKUpdater.apk
           if-no-files-found: error
 
+      - name: Release
+        if: success()
+        uses: softprops/action-gh-release@v1
+        with:
+          name: "BoostKernel App"
+          files: |
+            /home/runner/work/BKUpdater/BKUpdater/app/build/outputs/apk/release/BKUpdater.apk
+          tag_name: ${{ github.run_number }}-${{ github.ref }}
+
       - name: Delete workflow runs
         uses: Mattraks/delete-workflow-runs@v2
         with:
