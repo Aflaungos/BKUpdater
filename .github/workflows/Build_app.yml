@@ -2,7 +2,7 @@ name: Build BKUpdater App
 
 on:
   push:
-  workflow_dispatch:
+  workflow_call:
 
 jobs:
   build-bkupdater:
