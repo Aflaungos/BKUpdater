@@ -18,7 +18,7 @@ public class Constants {
     public static final String PROP_ROM_BUILD = "ro.on.core.build";
 
     // Manifest
-    public static final String OTA_MANIFEST_URL = "https://raw.githubusercontent.com/Aflaungos/BKUpdater/manifest.xml";
+    public static final String OTA_MANIFEST_URL = "https://raw.githubusercontent.com/Aflaungos/BKUpdater/m23xq/manifest.xml";
 
     // Broadcast intents
     public static final String INTENT_MANIFEST_LOADED = "com.mesalabs.ten.ota.MANIFEST_LOADED";
