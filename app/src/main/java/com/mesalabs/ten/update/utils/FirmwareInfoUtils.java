@@ -42,13 +42,7 @@ public class FirmwareInfoUtils {
         if (uname == null) {
             return null;
         }
-
-        Matcher m = Pattern.compile("(#\\d+) (?:.*?)?((Sun|Mon|Tue|Wed|Thu|Fri|Sat).+)").matcher(uname.version);
-        if (!m.matches()) {
-            LogUtils.e(TAG, "Regex did not match on uname version " + uname.version);
-            return null;
-        }
-        return uname.release + "\n" + m.group(1) + " " + m.group(2);
+        return uname.release + "\n" + uname.version;
     }
 
     public static String getOneUIVersion() {
