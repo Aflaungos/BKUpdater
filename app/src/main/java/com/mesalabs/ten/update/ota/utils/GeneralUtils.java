@@ -71,10 +71,10 @@ public class GeneralUtils {
     }
 
     public static void setUpdateAvailability() {
-        int oldver = PreferencesUtils.ROM.getPrevVer();
-        int newver = PreferencesUtils.ROM.getCurVer();
+        int olddate = FirmwareInfoUtils.FirmwareInfoUtils.getKernelVersion();
+        int newdate = PreferencesUtils.ROM.getNewDate();
 
-        boolean available = oldver < newver;
+        boolean available = olddate < newdate;
 
         PreferencesUtils.Download.setUpdateAvailability(available);
         LogUtils.d(TAG, "Update Availability is " + available);
