@@ -128,11 +128,8 @@ public class ChangelogView extends LinearLayout {
 
         String romVersionNumber = PreferencesUtils.ROM.getVersionName();
         String romVersionLine = SEPARATOR + getResources().getString(R.string.mesa_whats_new_supertext_rom_version) + TWO_DOTS + romVersionNumber;
-        String buildDateNumber = String.valueOf(PreferencesUtils.ROM.getBuildNumber());
-        try {
-            buildDateNumber = DateFormat.format(DateFormat.getBestDateTimePattern(Locale.getDefault(), "dMMMMyyyy"), new SimpleDateFormat("yyyyMMdd").parse(buildDateNumber)).toString();
-        } catch (ParseException ignored) { }
-        String buildDateLine = SEPARATOR + getResources().getString(R.string.mesa_whats_new_supertext_rom_build) + TWO_DOTS + buildDateNumber;
+        String PrevVer = String.valueOf(PreferencesUtils.ROM.getPrevVer());
+        String CurVer = String.valueOf(PreferencesUtils.ROM.getCurVer());
         String updateSizeNumber = Formatter.formatFileSize(mContext, PreferencesUtils.ROM.getFileSize());
         String updateSizeLine = SEPARATOR + getResources().getString(R.string.mesa_whats_new_supertext_file_size) + TWO_DOTS + updateSizeNumber;
 
