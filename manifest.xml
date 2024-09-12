@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <OnOTAInfo>
   <RomName>BoostKernel Update!</RomName>
+  <NewDate>0</NewDate>
   <DownloadURL>https://github.com/Aflaungos/android_kernel_samsung_sm7225/releases/download/37-refs%2Fheads%2Flineage-20.0-BoostKernel-old-m23xq/BoostKernel_m23xq+KSU_2024-09-09.zip</DownloadURL>
   <AndroidVer>14</AndroidVer>
   <OneUIVer>6.1</OneUIVer>
