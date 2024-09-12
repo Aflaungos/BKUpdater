@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="mesa_tenupdate">BoostKernel Updater</string>
+    <string name="mesa_tenupdate">BKUpdater</string>
 
     <string name="mesa_tenupdate_notichannel_main_name">General</string>
     <string name="mesa_tenupdate_notichannel_bg_name">Background</string>
@@ -17,7 +17,7 @@
     <string name="mesa_noti_download_failed">Download failed</string>
     <string name="mesa_noti_download_failed_md5_desc">The update package is damaged. Please start the download again.</string>
     <string name="mesa_noti_update_installed">Update installed</string>
-    <string name="mesa_noti_update_installed_desc">ROM has been updated to %s.</string>
+    <string name="mesa_noti_update_installed_desc">Kernel has been updated to %s.</string>
     <string name="mesa_noti_update_install_fail">Update failed</string>
     <string name="mesa_noti_update_install_fail_desc">There was an error during the install. Please try again.</string>
 
@@ -32,7 +32,7 @@
     <string name="mesa_download_failed_md5">Download failed. Update is damaged.</string>
 
     <string name="mesa_settings">Settings</string>
-    <string name="mesa_app_settings">BK Updater Settings</string>
+    <string name="mesa_app_settings">BKUpdater Settings</string>
     <string name="mesa_list_summary" translatable="false">%s</string>
     <string name="mesa_notifs_prefcateg_title">Notifications</string>
     <string name="mesa_bgservice_pref_title">Updates notifications</string>
@@ -51,7 +51,7 @@
     <string name="mesa_networktype_pref_title">Update over network</string>
     <string name="mesa_wifinetworkonly_pref_sum">Wi-Fi only</string>
     <string name="mesa_mobileorwifi_pref_sum">Mobile or Wi-Fi</string>
-    <string name="mesa_aboutactivity_pref_title">About BK Updater</string>
+    <string name="mesa_aboutactivity_pref_title">About BKUpdater</string>
 
 
 
