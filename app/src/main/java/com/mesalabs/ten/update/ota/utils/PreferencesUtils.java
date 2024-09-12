@@ -199,12 +199,12 @@ public class PreferencesUtils {
             return sp.getString(VERSION_NAME, DEF_VALUE);
         }
 
-        public static String getPrevVer() {
-            return sp.getString(PrevVer);
+        public static Int getPrevVer() {
+            return sp.getInt(PrevVer);
         }
 
         public static String getCurVer() {
-            return sp.getString(CurVer);
+            return sp.getInt(CurVer);
         }
         
         public static String getDownloadUrl() {
