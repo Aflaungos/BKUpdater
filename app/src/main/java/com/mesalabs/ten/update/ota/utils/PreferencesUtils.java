@@ -197,12 +197,12 @@ public class PreferencesUtils {
             return sp.getString(VERSION_NAME, DEF_VALUE);
         }
 
-        public static int getPrevVer() {
-            return sp.getInt(PrevVer, 0);
+        public static String getPrevVer() {
+            return sp.getString(PrevVer);
         }
 
-        public static int getCurVer() {
-            return sp.getInt(CurVer, 0);
+        public static String getCurVer() {
+            return sp.getString(CurVer);
         }
         
         public static String getDownloadUrl() {
@@ -282,7 +282,7 @@ public class PreferencesUtils {
         }
 
         public static String getFilename() {
-            String result = getRomName() + "_OTA_" + getVersionName() + "_" + getBuildNumber();
+            String result = getRomName() + "_OTA_" + getVersionName();
             return result.replace(" ","-");
         }
 
