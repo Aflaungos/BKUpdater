@@ -190,10 +190,6 @@ public class ChangelogActivity extends BaseAppBarActivity {
             }
 
             title = PreferencesUtils.ROM.getRomName() + " v" + PreferencesUtils.ROM.getVersionName();
-            date = String.valueOf(PreferencesUtils.ROM.getBuildNumber());
-            try {
-                date = DateFormat.format(DateFormat.getBestDateTimePattern(Locale.getDefault(), "d/MM/yyyy"), new SimpleDateFormat("yyyyMMdd").parse(date)).toString();
-            } catch (ParseException ignored) { }
 
             try {
                 InputStream in = new URL(changelogUrl).openConnection().getInputStream();
