@@ -161,8 +161,8 @@ public class PreferencesUtils {
         
         private static String NAME = "rom_name";
         private static String VERSION_NAME = "rom_version_name";
-        private static Int PREVVER = "kernel_prevver";
-        private static Int CURVER = "kernel_curver";
+        private static Int PREVVER = "rom_kernel_prevver";
+        private static Int CURVER = "rom_kernel_curver";
         private static String DOWNLOAD_URL = "rom_download_url";
         private static String MD5 = "rom_md5";
         private static String CHANGELOG_HEADER = "rom_changelog_header_img";
