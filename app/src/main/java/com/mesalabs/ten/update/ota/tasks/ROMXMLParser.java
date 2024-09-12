@@ -33,7 +33,6 @@ public class ROMXMLParser extends DefaultHandler {
 
     boolean tagRomName = false;
     boolean tagVersionName = false;
-    boolean tagBuildNumber = false;
     boolean tagDownloadUrl = false;
     boolean tagMD5 = false;
     boolean tagLogHeader = false;
@@ -75,10 +74,6 @@ public class ROMXMLParser extends DefaultHandler {
 
         if (qName.equalsIgnoreCase("versionname")) {
             tagVersionName = true;
-        }
-
-        if (qName.equalsIgnoreCase("buildnumber")) {
-            tagBuildNumber = true;
         }
 
         if (qName.equalsIgnoreCase("downloadurl")) {
@@ -132,12 +127,6 @@ public class ROMXMLParser extends DefaultHandler {
             PreferencesUtils.ROM.setVersionName(input);
             tagVersionName = false;
             LogUtils.d(TAG, "Version = " + input);
-        }
-
-        if (tagBuildNumber) {
-            PreferencesUtils.ROM.setBuildNumber(Integer.parseInt(input));
-            tagBuildNumber = false;
-            LogUtils.d(TAG, "Build Number = " + input);
         }
 
         if (tagDownloadUrl) {
