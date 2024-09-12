@@ -161,7 +161,8 @@ public class PreferencesUtils {
         
         private static String NAME = "rom_name";
         private static String VERSION_NAME = "rom_version_name";
-        private static String BUILD_NUMBER = "rom_build_number";
+        private static String PrevVer = "kernel_PrevVer";
+        private static String CurVer = "kernel_CurVer";
         private static String DOWNLOAD_URL = "rom_download_url";
         private static String MD5 = "rom_md5";
         private static String CHANGELOG_HEADER = "rom_changelog_header_img";
@@ -177,7 +178,8 @@ public class PreferencesUtils {
         public static void clean() {
             sp.put(NAME, DEF_VALUE);
             sp.put(VERSION_NAME, DEF_VALUE);
-            sp.put(BUILD_NUMBER, 0);
+            sp.put(PrevVer, 0);
+            sp.put(CurVer, 0);
             sp.put(DOWNLOAD_URL, DEF_VALUE);
             sp.put(MD5, DEF_VALUE);
             sp.put(CHANGELOG, DEF_VALUE);
@@ -245,8 +247,12 @@ public class PreferencesUtils {
             sp.put(VERSION_NAME, value);
         }
 
-        public static void setBuildNumber(int value) {
-            sp.put(BUILD_NUMBER, value);
+        public static void setPrevVer(int value) {
+            sp.put(PrevVer, value);
+        }
+
+        public static void setCurVer(int value) {
+            sp.put(CurVer, value);
         }
 
         public static void setDownloadUrl(String value) {
