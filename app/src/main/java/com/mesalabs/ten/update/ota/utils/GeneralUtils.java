@@ -71,8 +71,8 @@ public class GeneralUtils {
     }
 
     public static void setUpdateAvailability() {
-        Int oldver = PreferencesUtils.ROM.getPrevVer();
-        Int newver = PreferencesUtils.ROM.getCurVer();
+        int oldver = PreferencesUtils.ROM.getPrevVer();
+        int newver = PreferencesUtils.ROM.getCurVer();
 
         boolean available = oldver < newver;
 
