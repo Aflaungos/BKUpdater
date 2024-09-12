@@ -2,11 +2,6 @@
 <com.mesalabs.cerberus.ui.widget.RoundNestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="?round_and_bgColor" android:orientation="vertical" android:scrollbars="vertical" android:fillViewport="true" android:overScrollMode="always" app:roundedCorners="top_left|top_right" app:layout_behavior="@string/sesl_appbar_scrolling_view_behavior" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
     <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:gravity="center_horizontal" android:orientation="vertical">
 
-        <com.mesalabs.cerberus.ui.widget.RoundLinearLayout android:background="@drawable/mesa_content_area_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical">
-            <com.mesalabs.ten.update.ui.widget.CardView
-                android:id="@+id/mesa_card_rom_ota_firmwareinfo" android:layout_width="fill_parent" android:layout_height="wrap_content" app:TitleText="@string/mesa_fwinfo_on_rom_version_title" app:DescText="@string/mesa_fwinfo_default_summary"  app:isDividerViewVisible="false" />
-           </com.mesalabs.cerberus.ui.widget.RoundLinearLayout>
-
         <View android:layout_width="fill_parent" android:layout_height="16.0dip" android:background="?round_and_bgColor"/>
 
         <com.mesalabs.cerberus.ui.widget.RoundLinearLayout android:background="@drawable/mesa_content_area_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical">
