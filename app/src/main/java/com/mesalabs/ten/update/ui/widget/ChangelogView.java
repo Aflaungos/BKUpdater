@@ -137,7 +137,6 @@ public class ChangelogView extends LinearLayout {
         span.append(romVersionLine);
         span.setSpan(new ForegroundColorSpan(COLORPRIMARYDARK), span.length() - romVersionNumber.length(), span.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
         span.append(NEW_LINE);
-        span.append(buildDateLine);
         span.setSpan(new ForegroundColorSpan(COLORPRIMARYDARK), span.length() - buildDateNumber.length(), span.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
         span.append(NEW_LINE);
         span.append(updateSizeLine);
