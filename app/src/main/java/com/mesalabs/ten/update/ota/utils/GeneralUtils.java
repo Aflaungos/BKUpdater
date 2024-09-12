@@ -17,6 +17,7 @@ import com.mesalabs.ten.update.R;
 import com.mesalabs.ten.update.activity.home.MainActivity;
 import com.mesalabs.ten.update.ota.receivers.AppReceiver;
 import com.mesalabs.ten.update.utils.LogUtils;
+import com.mesalabs.ten.update.utils.FirmwareInfoUtils;
 
 /*
  * 십 Update
