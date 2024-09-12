@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="mesa_ota_primary_color_dark">#00B74D</color>
-    <color name="mesa_ota_primary_color_light">#00B74D</color>
-    <color name="mesa_ota_primary_dark_color_dark">#00C954</color>
-    <color name="mesa_ota_primary_dark_color_light">#00A545</color>
-    <color name="mesa_ota_control_activated_color">#00C954</color>
-    <color name="mesa_ota_progress_control_color_activated_dark">#00B74D</color>
-    <color name="mesa_ota_progress_control_color_activated_light">#00B74D</color>
-    <color name="mesa_ota_progress_control_color_normal_dark">#4D00B74D</color>
-    <color name="mesa_ota_progress_control_color_normal_light">#4D00B74D</color>
+    <color name="mesa_ota_primary_color_dark">#eb6f09</color>
+    <color name="mesa_ota_primary_color_light">#eb6f09</color>
+    <color name="mesa_ota_primary_dark_color_dark">#eb4909</color>
+    <color name="mesa_ota_primary_dark_color_light">#eb4909</color>
+    <color name="mesa_ota_control_activated_color">#eb4909</color>
+    <color name="mesa_ota_progress_control_color_activated_dark">#eb6f09</color>
+    <color name="mesa_ota_progress_control_color_activated_light">#eb6f09</color>
+    <color name="mesa_ota_progress_control_color_normal_dark">#4deb6f09</color>
+    <color name="mesa_ota_progress_control_color_normal_light">#4deb6f09</color>
 
-    <color name="mesa_ota_card_ic_update_color">#00C954</color>
+    <color name="mesa_ota_card_ic_update_color">#eb4909</color>
     <color name="mesa_ota_card_ic_firmware_info_color">#BABABA</color>
 
     <color name="mesa_changelogview_super_bg_color">#EFEFEF</color>
