@@ -9,8 +9,8 @@
 
     <string name="mesa_latest_version">The latest version is already installed.</string>
     <string name="mesa_new_version_available">A new version is available.</string>
-    <string name="mesa_updates_error_phone">"Can't check for updates. Your phone's network connection isn't stable."</string>
-    <string name="mesa_updates_error_tablet">"Can't check for updates. Your tablet's network connection isn't stable."</string>
+    <string name="mesa_updates_error_phone">"Can't check for updates."</string>
+    <string name="mesa_updates_error_tablet">"Can't check for updates."</string>
     <string name="mesa_no_network_connection">No network connection</string>
 
     <string name="mesa_credits">Credits</string>
