@@ -71,10 +71,10 @@ public class GeneralUtils {
     }
 
     public static void setUpdateAvailability() {
-        Int PrevVer = PreferencesUtils.ROM.getPrevVer();
-        Int CurVer = PreferencesUtils.ROM.getCurVer();
+        Int oldver = PreferencesUtils.ROM.getPrevVer();
+        Int newver = PreferencesUtils.ROM.getCurVer();
 
-        boolean available = PrevVer < CurVer;
+        boolean available = oldver < newver;
 
         PreferencesUtils.Download.setUpdateAvailability(available);
         LogUtils.d(TAG, "Update Availability is " + available);
