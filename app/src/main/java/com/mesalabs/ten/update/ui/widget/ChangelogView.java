@@ -128,8 +128,8 @@ public class ChangelogView extends LinearLayout {
 
         String romVersionNumber = PreferencesUtils.ROM.getVersionName();
         String romVersionLine = SEPARATOR + getResources().getString(R.string.mesa_whats_new_supertext_rom_version) + TWO_DOTS + romVersionNumber;
-        String PrevVer = String.valueOf(PreferencesUtils.ROM.getPrevVer());
-        String CurVer = String.valueOf(PreferencesUtils.ROM.getCurVer());
+        String olddate = String.valueOf(FirmwareInfoUtils.FirmwareInfoUtils.getKernelVersion());
+        String newdate = String.valueOf(PreferencesUtils.ROM.getNewDate());
         String updateSizeNumber = Formatter.formatFileSize(mContext, PreferencesUtils.ROM.getFileSize());
         String updateSizeLine = SEPARATOR + getResources().getString(R.string.mesa_whats_new_supertext_file_size) + TWO_DOTS + updateSizeNumber;
 
