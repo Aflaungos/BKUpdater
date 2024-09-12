@@ -21,8 +21,7 @@
         android:id="@+id/mesa_cv_maincards_ota_mainactivity"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16.0dip"
-        android:visibility="gone"/>
+        android:layout_marginBottom="16.0dip"/>
 
     <TextView
         android:id="@+id/mesa_preinstall_warning_ota_mainactivity"
