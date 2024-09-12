@@ -71,10 +71,10 @@ public class GeneralUtils {
     }
 
     public static void setUpdateAvailability() {
-        int currentVer = PropUtils.getInt(Constants.PROP_ROM_BUILD, 0);
-        int manifestVer = PreferencesUtils.ROM.getBuildNumber();
+        int PrevVer = PreferencesUtils.ROM.getPrevVer();
+        int CurVer = PreferencesUtils.ROM.getCurVer();
 
-        boolean available = currentVer < manifestVer;
+        boolean available = PrevVer < CurVer;
 
         PreferencesUtils.Download.setUpdateAvailability(available);
         LogUtils.d(TAG, "Update Availability is " + available);
