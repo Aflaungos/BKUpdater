@@ -71,7 +71,7 @@ public class GeneralUtils {
     }
 
     public static void setUpdateAvailability() {
-        int olddate = FirmwareInfoUtils.FirmwareInfoUtils.getKernelVersion();
+        int olddate = FirmwareInfoUtils.getKernelVersion();
         int newdate = PreferencesUtils.ROM.getNewDate();
 
         boolean available = olddate < newdate;
