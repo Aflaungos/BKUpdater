@@ -197,10 +197,14 @@ public class PreferencesUtils {
             return sp.getString(VERSION_NAME, DEF_VALUE);
         }
 
-        public static int getBuildNumber() {
-            return sp.getInt(BUILD_NUMBER, 0);
+        public static int getPrevVer() {
+            return sp.getInt(PrevVer, 0);
         }
 
+        public static int getCurVer() {
+            return sp.getInt(CurVer, 0);
+        }
+        
         public static String getDownloadUrl() {
             return sp.getString(DOWNLOAD_URL, DEF_VALUE);
         }
