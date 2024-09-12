@@ -161,8 +161,7 @@ public class PreferencesUtils {
         
         private static String NAME = "rom_name";
         private static String VERSION_NAME = "rom_version_name";
-        private static String PREVVER = "rom_prevver";
-        private static String CURVER = "rom_curver";
+        private static String NEWDATE = "rom_newdate";
         private static String DOWNLOAD_URL = "rom_download_url";
         private static String MD5 = "rom_md5";
         private static String CHANGELOG_HEADER = "rom_changelog_header_img";
@@ -178,8 +177,7 @@ public class PreferencesUtils {
         public static void clean() {
             sp.put(NAME, DEF_VALUE);
             sp.put(VERSION_NAME, DEF_VALUE);
-            sp.put(PREVVER, 0);
-            sp.put(CURVER, 0);
+            sp.put(NEWDATE, 0);
             sp.put(DOWNLOAD_URL, DEF_VALUE);
             sp.put(MD5, DEF_VALUE);
             sp.put(CHANGELOG, DEF_VALUE);
@@ -199,12 +197,8 @@ public class PreferencesUtils {
             return sp.getString(VERSION_NAME, DEF_VALUE);
         }
 
-        public static int getPrevVer() {
-            return sp.getInt(PREVVER, 0);
-        }
-
-        public static int getCurVer() {
-            return sp.getInt(CURVER, 0);
+        public static int getNewDate() {
+            return sp.getInt(NEWDATE, 0);
         }
         
         public static String getDownloadUrl() {
@@ -247,12 +241,8 @@ public class PreferencesUtils {
             sp.put(VERSION_NAME, value);
         }
 
-        public static void setPrevVer(int value) {
-            sp.put(PREVVER, value);
-        }
-
-        public static void setCurVer(int value) {
-            sp.put(CURVER, value);
+        public static void setNewDate(int value) {
+            sp.put(NEWDATE, value);
         }
 
         public static void setDownloadUrl(String value) {
