@@ -14,9 +14,6 @@ package com.mesalabs.ten.update.ota.utils;
  */
 
 public class Constants {
-    // Props
-    public static final String PROP_ROM_BUILD = "ro.on.core.build";
-
     // Manifest
     public static final String OTA_MANIFEST_URL = "https://raw.githubusercontent.com/Aflaungos/BKUpdater/m23xq/manifest.xml";
 
